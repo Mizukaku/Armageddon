@@ -1,0 +1,47 @@
+lang:
+  prefix: '&f[&aXPBoost&f] '
+  doublexpnot: '&fYou got &a%newexp% XP &finstead of &a%oldexp% XP'
+  actionbar: '&a%boost%x XP boost is active'
+  bossbar: '&a%boost%x XP boost is active'
+  motd: "&c%boost%x &aXP Multiplier is enabled! Join NOW! \n &f&lThis is second line!\
+    \ &c%players%/%max%"
+  boostfisnish: '&cYour boost has expired.'
+  boostcountdown: '&fSeconds remaining: &6'
+  boostinfodeny: '&fYou dont have any active boosts.'
+  xpbuy: '&c%boost%x &fXP boost &fis on for &a%time% seconds &c(%money%$).'
+  gui: '&cXPBoost Shop'
+  xptitle: '&a%boost%x XP Boost.'
+  boostlore:
+  - '&c%boost%x XP Boost for %time% seconds'
+  - '&aPrice: &f&l%money%$'
+  buyfail: '&cYou dont have enough money to purchase this boost! &a(%money%$)'
+  boostactive: '&cYour boost is still active!'
+  joinnotmsg: '&f&lGlobal XP Boost of %boost%x is currently &f&aenabled &f&lfor everyone!'
+  cmdblock: '&cYou are not allowed to execute &a%cmd% &ccommand while boost is active
+    :('
+  itemname: '&a%boost%x XPBoost'
+  factions_gui_name: '&cFaction XPBoost Shop'
+  factions_nofaction: '&cYou are not member of any faction.'
+  factions_active_boost: Your faction already has an active boost!
+  factions_only_owners: This boost can purchase only owner of the faction!
+  factions_expire: '&cBoost for you faction has expired!'
+  factions_buy: '&c%player% &fhas bought a boost of &c%boost%x &ffor whole faction
+    for &c%time% seconds!'
+  factions_one_boost: You cannot purchase any boosts while faction boost is active.
+  item:
+    lore1: '&fBoost: &a%boost%x'
+    lore2: '&fDuration: &a%time% Seconds'
+    lore3: '&8Right-Click to gain boost.'
+  reload: '&fConfig has been reloaded'
+  pluginmenu:
+  - /xpboost gui &f- Opens up GUI
+  - /xpboost info &f- Shows time remaining
+  - /xpboost factions &f- Opens up a factions GUI
+  - /xpboost on/off &f - Enables/disables global XP Boost
+  - /xpboost give <name/all> <boost> <time> [VANILLA,SKILLAPI,MCMMO,RPGME,HEROES]&f
+    - Gives player boost
+  - /xpboost clear <name> &f - Clears active boost
+  - /xpboost item <player> <boost> <time>&f - Gives an XPboost item to a player
+  - /xpboost global <boost> [time in seconds]- Changes global boost multiplier
+  - /xpboost reload &f - Reloads config
+  - What ever is inside [] is &coptional

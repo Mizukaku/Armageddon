@@ -1,0 +1,68 @@
+# If you want to change any line in any file, if the first character is '&' type between "' '"  e.g: '&aEnabled successfully!'
+
+Plugin:
+  # The prefix that will appear always when the plugin send a message
+  Prefix: '&c[Armageddon]'
+
+Console_Messages:
+# Enabled message in the console start
+  Plugin_Enabled: '&aAtivado com sucesso!'
+  
+# Reloaded message to reload command sender
+  Plugin_Reloaded: '&aRecarregado com sucesso!'
+
+Messages:
+# Show when a player mines a spawner successfully
+  Lucky: '&bWow, você teve sorte e o spawn não quebrou!'
+
+# If some group is using percentage permission, this will show if a player mines and not have luck
+  Unlucky: '&cAhhh, boa sorte da próxima vez.'
+
+# Here is the message to send when a player to use a not allowed pick
+  Warning: '&cVocê não pode quebrar spawners com essa ferramenta.'
+
+# When players have not permission, it will show when he mines a spawner
+  No_Permission: '&cVocê não tem permissão para isso.'
+
+# When players have not mob permission, it will show when he mines a spawner
+  No_Mob_Permission: '&cVocê não tem permissão para'
+
+# If you try to give a spawner to a player whom not exist online in the server
+  Player_Not_Found: '&cJogador não encontrado online no servidor.'
+
+# Invalid command message to help you
+  Invalid_Command: '&cComando inválido: &6Use: /gs give <player> <mob_name> <amount>'
+
+# Gave message will appear if you have success giving a player spawners with command
+  Gave: '&aVocê entregou &6%amount%&r %spawner_name% &apara o jogador &f%player%.'
+
+# Received message will appear if you have success receiving a spawners from an admin or console
+  Received: '&aVocê recebeu &6%amount%&r %spawner_name% &ado jogador &f%sender%.'
+
+# Mob names to help you with commands
+  Mob_Names: '&eNome dos mobs:'
+
+# Command hint maybe also can help
+  Commands_Hint: '&eComandos válidos:'
+
+# The message to notice you changed a mob spawner from what to what
+  Changed_Spawner: '&fAlterado %placed_spawner% &fpara %new_spawner%.'
+
+# If the change option is disabled, plugin will notice you by this message
+  No_Change_Enabled: '&cVocê não pode fazer isso.'
+  
+# When you have Residence plugin installed, this message will appear to players that try change protected spawners
+  GriefPrevention_Compat_No_Interact: '&2Você não tem permissão para fazer isso.'
+  
+# When you have Residence plugin installed, this message will appear to players that try change protected spawners
+  Residence_Compat_No_Interact: '&6Residence protected area; &cYou don''t have interact &cpermission<s> with that block.'
+  
+# When you have WorldGuard plugin installed, this message will appear to players that try change protected spawners
+  WorldGuard_Compat_No_Interact: '&3Você não pode fazer isso aqui.'
+  
+# When you have Towny plugin installed, this message will appear to players that try change protected spawners
+  Towny_Compat_No_Interact: '&5Towny protected area; &cNot allowed to interact with that block.'  
+  
+# When you have SuperVanish plugin installed, this message will appear to invisibles players that try change spawners while
+# SuperVanish_Prevent_SpawnEgg_Change option is set to true in GetSpawners config.yml file
+  SuperVanish_Compat_No_Interact: '&cYou can''t change spawners while invisible by &aSuperVanish, &cbecause prevent option is enabled in getspawners config.yml file.'
