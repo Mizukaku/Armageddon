@@ -187,7 +187,7 @@ Messages:
   SiegeNoDrop:
     Text: Você não pode jogar nada no chão enquanto estiver em disputa.
   DonateItemsInstruction:
-    Text: To give away the item(s) in your hand, left-click the chest again.
+    Text: Para transferir o item na sua mão, clique com o botão esquerdo no baú novamente.
   ChestFull:
     Text: Este baú está cheio.
   DonationSuccess:
@@ -231,9 +231,9 @@ Messages:
   PvPNoDrop:
     Text: Você não pode jogar itens no chão estando em PVP.
   SiegeNoTeleport:
-    Text: You can't teleport out of a besieged area.
+    Text: Você não pode se teleportar dentro de uma área protegida.
   BesiegedNoTeleport:
-    Text: You can't teleport into a besieged area.
+    Text: Você não pode se teleportar para uma área protegida.
   SiegeNoContainers:
     Text: Você não pode acessar baús estando em uma diputa.
   PvPNoContainers:
@@ -295,8 +295,8 @@ Messages:
   ClaimsDisabledWorld:
     Text: A proteção de blocos esta desativada neste mundo.
   ClaimStart:
-    Text: Claim corner set!  Use the shovel again at the opposite corner to claim
-      a rectangle of land.  To cancel, put your shovel away.
+    Text: Canto da proteção selecionado! Use novamente sua pá no canto oposto para proteger a área retangular.
+     Para cancelar, tire a pá da sua mão.
   NewClaimTooNarrow:
     Text: Esta proteção é muito pequena. Qualquer proteção deve ter no minimo {0}
       blocos de largura.
@@ -308,38 +308,37 @@ Messages:
   AbandonClaimAdvertisement:
     Text: Para deletar outra proteção e resgatar blocos de proteção, use /AbandonClaim.
   CreateClaimFailOverlapShort:
-    Text: Your selected area overlaps an existing claim.
+    Text: A área que você selecionou já está protegida por alguém.
   CreateClaimSuccess:
-    Text: Claim created!  Use /trust to share it with friends.
+    Text: Proteção criada!  Use /trust para compartilhar com amigos.
   SiegeWinDoorsOpen:
-    Text: Congratulations!  Buttons and levers are temporarily unlocked.
+    Text: Parabéns!  Botões e alavancas estão temporariamente desbloqueadas.
   RescueAbortedMoved:
-    Text: Você se moveu!  Rescue cancelled.
+    Text: Você se moveu!  Resgate cancelado.
   SiegeDoorsLockedEjection:
-    Text: Looting time is up!  Ejected from the claim.
+    Text: Resgate bem sucedido!  Você foi ejetado da proteção.
   NoModifyDuringSiege:
-    Text: Claims can't be modified while under siege.
+    Text: Terrenos não podem ser modificados durante PVP.
   OnlyOwnersModifyClaims:
     Text: Apenas o jogador {0} pode modificar esta proteção.
     Notes: '0: owner name'
   NoBuildUnderSiege:
-    Text: This claim is under siege by {0}.  No one can build here.
+    Text: Está proteção está sendo atacada por {0}.  Ninguém pode construir aqui.
     Notes: '0: attacker name'
   NoBuildPvP:
-    Text: You can't build in claims during PvP combat.
+    Text: Você não pode construir em proteções durante PVP.
   NoBuildPermission:
     Text: Você não tem a permissão do jogador {0} para construir aqui.
     Notes: '0: owner name'
   NonSiegeMaterial:
     Text: Este material é duro demais para ser quebrado.
   NoOwnerBuildUnderSiege:
-    Text: You can't make changes while under siege.
+    Text: Você não pode fazer modificações durante PVP.
   NoAccessPermission:
     Text: Você não tem permissão do jogador {0} para usar isso.
-    Notes: '0: owner name.  access permission controls buttons, levers, and beds'
+    Notes: '0: Nome do proprietário.  Permissão para acessar botões, alavancas, e camas'
   NoContainersSiege:
-    Text: This claim is under siege by {0}.  No one can access containers here right
-      now.
+    Text: Esta proteção esta sendo atacada por {0}.  Ninguém pode acessar os containers agora.
     Notes: '0: attacker name'
   NoContainersPermission:
     Text: Você não tem permissão do jogador {0} abrir isso.
@@ -348,140 +347,128 @@ Messages:
     Text: Administrador
     Notes: as in 'You don't have an administrator's permission to build here.'
   ClaimTooSmallForEntities:
-    Text: This claim isn't big enough for that.  Try enlarging it.
+    Text: Esta proteção não é grande suficiente para isso! Tente deixá-la mais larga.
   TooManyEntitiesInClaim:
-    Text: This claim has too many entities already.  Try enlarging the claim or removing
-      some animals, monsters, paintings, or minecarts.
+    Text: Está proteção tem muitas entidades.  Tente aumentá-la ou remover animais,monstros,quadros,ou minecarts.
   YouHaveNoClaims:
     Text: Você não tem nenhum bloco protegido.
   ConfirmFluidRemoval:
-    Text: Abandoning this claim will remove lava inside the claim.  If you're sure,
-      use /AbandonClaim again.
+    Text: Abandonar a proteção retira toda a lava dela. Se concorda, digite /abandonclaim novamente.
   AutoBanNotify:
-    Text: Auto-banned {0}({1}).  See logs for details.
+    Text: Banido automaticamente {0}({1}).  Olhar o log para mais detalhes.
   AdjustGroupBlocksSuccess:
-    Text: 'Adjusted bonus claim blocks for players with the {0} permission by {1}.  New
-      total: {2}.'
+    Text: 'Blocos bônus de proteção ajustados para {0} para {1}. Novo total de blocos: {2}.'
     Notes: '0: permission; 1: adjustment amount; 2: new total bonus'
   InvalidPermissionID:
-    Text: Please specify a player name, or a permission in [brackets].
+    Text: Especifique o nome do jogador, ou a permissao entre [chaves].
   HowToClaimRegex:
-    Text: (^|.*\W)how\W.*\W(claim|protect|lock)(\W.*|$)
+    Text: (^|.*\W)how\W.*\W(terreno|proteger|travar)(\W.*|$)
     Notes: This is a Java Regular Expression.  Look it up before editing!  It's used
       to tell players about the demo video when they ask how to claim land.
   NoBuildOutsideClaims:
-    Text: You can't build here unless you claim some land first.
+    Text: Você não pode construir aqui a não ser que proteja um terreno antes.
   PlayerOfflineTime:
-    Text: '  Last login: {0} days ago.'
+    Text: '  Último login: {0} dias atrás.'
     Notes: '0: number of full days since last login'
   BuildingOutsideClaims:
-    Text: Other players can build here, too.  Consider creating a land claim to protect
-      your work!
+    Text: Outros jogadores conseguem construir aqui também.  Considere criar um terreno com pá de ouro para proteger suas coisas!
   TrappedWontWorkHere:
-    Text: Sorry, unable to find a safe location to teleport you to.  Contact an admin.
+    Text: Desculpe, não foi possível encontrar uma localização segura para teleporte. Contate um admin.
   CommandBannedInPvP:
-    Text: You can't use that command while in PvP combat.
+    Text: Você não pode usar esse comando enquanto está em PVP.
   UnclaimCleanupWarning:
-    Text: The land you've unclaimed may be changed by other players or cleaned up
-      by administrators.  If you've built something there you want to keep, you should
-      reclaim it.
+    Text: O terreno que você desprotegeu pode ser modificado por outros jogadores ou limpo pela STAFF.
+      Se você construiu algo que gostaria de manter, considere reproteger o terreno.
   BuySellNotConfigured:
-    Text: Sorry, buying and selling claim blocks is disabled.
+    Text: Desculpa, comprar ou vender blocos de proteção está desabilitado.
   NoTeleportPvPCombat:
-    Text: You can't teleport while fighting another player.
+    Text: Você não consegue teleportar enquanto está em PVP
   NoTNTDamageAboveSeaLevel:
-    Text: 'Warning: TNT will not destroy blocks above sea level.'
+    Text: 'Aviso: TNT não explodirá abaixo do nível do mar'
   NoTNTDamageClaims:
-    Text: 'Warning: TNT will not destroy claimed blocks.'
+    Text: 'Aviso: TNT não irá destruir terrenos protegidos'
   IgnoreClaimsAdvertisement:
-    Text: To override, use /IgnoreClaims.
+    Text: Para sobrepor, use /IgnoreClaims.
   NoPermissionForCommand:
-    Text: You don't have permission to do that.
+    Text: Você não tem permissão para fazer isso.
   ClaimsListNoPermission:
-    Text: You don't have permission to get information about another player's land
-      claims.
+    Text: Você não tem permissão para ter informações sobre a proteção de outro jogador.
   ExplosivesDisabled:
-    Text: This claim is now protected from explosions.  Use /ClaimExplosions again
-      to disable.
+    Text: Esta proteção está protegida contra explosões.  Use /ClaimExplosions novamente para habilitar explosões.
   ExplosivesEnabled:
-    Text: This claim is now vulnerable to explosions.  Use /ClaimExplosions again
-      to re-enable protections.
+    Text: Esta proteção está desprotegida contra explosões.  Use /ClaimExplosions para desabilitar explosões.
   ClaimExplosivesAdvertisement:
-    Text: To allow explosives to destroy blocks in this land claim, use /ClaimExplosions.
+    Text: Para habilitar que explosões quebrem blocos nesta proteção, use /ClaimExplosions.
   PlayerInPvPSafeZone:
-    Text: That player is in a PvP safe zone.
+    Text: O jogador está numa área segura.
   NoPistonsOutsideClaims:
-    Text: 'Warning: Pistons won''t move blocks outside land claims.'
+    Text: 'Aviso: Pistões não empurram blocos fora das proteções.'
   SoftMuted:
     Text: Soft-muted {0}.
-    Notes: '0: The changed player''s name.'
+    Notes: '0: O nome modificado do jogador.'
   UnSoftMuted:
     Text: Un-soft-muted {0}.
-    Notes: '0: The changed player''s name.'
+    Notes: '0: O nome modificado do jogador.'
   DropUnlockAdvertisement:
-    Text: Other players can't pick up your dropped items unless you /UnlockDrops first.
+    Text: Outros jogadores não podem pegar itens dropados ao menos que você use o comando /UnlockDrops antes.
   PickupBlockedExplanation:
-    Text: You can't pick this up unless {0} uses /UnlockDrops.
-    Notes: '0: The item stack''s owner.'
+    Text: Você não pode pegar isso a não ser que {0} use /UnlockDrops.
+    Notes: '0: Dono dos itens.'
   DropUnlockConfirmation:
-    Text: Unlocked your drops.  Other players may now pick them up (until you die
-      again).
+    Text: Você habilitou pegar drops na sua proteção. Outros jogadores podem pegá-los agora.
   DropUnlockOthersConfirmation:
-    Text: Unlocked {0}'s drops.
-    Notes: '0: The owner of the unlocked drops.'
+    Text: Desabilitou {0}'s drops.
+    Notes: '0: Dono dos itens.'
   AdvertiseACandACB:
-    Text: You may use /ACB to give yourself more claim blocks, or /AdminClaims to
-      create a free administrative claim.
+    Text: Você deve usar /ACB Para dar a si mesmo mais blocos de proteção, ou /AdminClaims para
+      criar uma proteção administrativa grátis.
   AdvertiseAdminClaims:
-    Text: You could create an administrative land claim instead using /AdminClaims,
-      which you'd share with other administrators.
+    Text: Você pode criar um terreno administrativo usando /AdminClaims,
+      que será compartilhado com outros administradores.
   AdvertiseACB:
-    Text: You may use /ACB to give yourself more claim blocks.
+    Text: Você deve usar /ACB Para se dar blocos de proteção.
   NotYourPet:
-    Text: That belongs to {0} until it's given to you with /GivePet.
-    Notes: '0: owner name'
+    Text: Isso pertence à {0} até ele te dar com o comando /GivePet.
+    Notes: '0: Nome do dono.'
   PetGiveawayConfirmation:
     Text: Animal transferido com sucesso.
   PetTransferCancellation:
     Text: Transferência do animal cancelada.
   ReadyToTransferPet:
-    Text: Pronto para transferir!  Right-click the pet you'd like to give away, or
-      cancel with /GivePet cancel.
+    Text: Pronto para transferir!  Clique com o botão direito no pet que você quer dar, ou cancele com o comando /GivePet cancel.
   AvoidGriefClaimLand:
-    Text: Prevent grief!  If you claim your land, you will be grief-proof.
+    Text: Griefing protegido! Se você proteger sua terra, será contra griefing.
   BecomeMayor:
-    Text: Subdivide your land claim and become a mayor!
+    Text: Subdivida seu terreno e seja o líder dela!
   ClaimCreationFailedOverClaimCountLimit:
-    Text: You've reached your limit on land claims.  Use /AbandonClaim to remove one
-      before creating another.
+    Text: Você atingiu o limite máximo de terrenos.  Use /AbandonClaim para remover um terreno antes de criar outro.
   CreateClaimFailOverlapRegion:
-    Text: You can't claim all of this because you're not allowed to build here.
+    Text: Você não tem permissão para proteger esse terreno.
   ResizeFailOverlapRegion:
-    Text: You don't have permission to build there, so you can't claim that area.
+    Text: Você não tem permissão para construir aqui, portanto não conseguirá proteger a área.
   ShowNearbyClaims:
-    Text: Found {0} land claims.
-    Notes: '0: Number of claims found.'
+    Text: Encontrado(s) {0} terrenos protegidos.
+    Notes: '0: Número de terrenos encontrados.'
   NoChatUntilMove:
-    Text: Sorry, but you have to move a little more before you can chat.  We get lots
-      of spam bots here.  :)
+    Text: Desculpe, você precisa se movimentar um pouco mais para se comunicar. É nossa maneira de lidar contra bots. :)
   SiegeImmune:
-    Text: Este jogador é imune ao /siege.
+    Text: Este servidor é imune ao /siege.
   SetClaimBlocksSuccess:
-    Text: Updated accrued claim blocks.
+    Text: Blocos de proteção acumulados atualizados!
   IgnoreConfirmation:
-    Text: You're now ignoring chat messages from that player.
+    Text: Você está ignorando as mensagens desse player.
   NotIgnoringPlayer:
-    Text: You're not ignoring that player.
+    Text: Você não está mais ignorando as mensagens desse player.
   UnIgnoreConfirmation:
-    Text: You're no longer ignoring chat messages from that player.
+    Text: Você não está mais ignorando as mensagens desse player.
   SeparateConfirmation:
-    Text: Those players will now ignore each other in chat.
+    Text: Esses jogadores estão se ignorando no chat à partir de agora.
   UnSeparateConfirmation:
-    Text: Those players will no longer ignore each other in chat.
+    Text: Esses jogadores não estão se ignorando no chat à partir de agora.
   NotIgnoringAnyone:
-    Text: You're not ignoring anyone.
+    Text: Você não está ignorando ninguém.
   TrustListHeader:
-    Text: 'Explicit permissions here:'
+    Text: 'Mensagens explícitas aqui:'
   Manage:
     Text: Gerenciar
   Build:
@@ -491,7 +478,7 @@ Messages:
   Access:
     Text: Acesso
   HasSubclaimRestriction:
-    Text: This subclaim does not inherit permissions from the parent
+    Text: Este subclaim não herda permissões do superior.
   StartBlockMath:
     Text: '{0} blocos por jogar + {1} comprados = {2} total.'
   ClaimsListHeader:
@@ -501,80 +488,76 @@ Messages:
   EndBlockMath:
     Text: ' = {0} blocos restantes para gastar'
   NoClaimDuringPvP:
-    Text: You can't claim lands during PvP combat.
+    Text: Você não pode proteger terrenos durante PVP.
   UntrustAllOwnerOnly:
-    Text: Only the claim owner can clear all its permissions.
+    Text: Apenas o dono da claim consegue limpar todas as permissões.
   ManagersDontUntrustManagers:
-    Text: Only the claim owner can demote a manager.
+    Text: Apenas o dono da claim consegue demitir um jogador.
   BookAuthor:
-    Text: BigScary
+    Text: LoSM
   BookTitle:
-    Text: How to Claim Land
+    Text: Como proteger seu terreno!
   BookIntro:
-    Text: Claim land to protect your stuff!  Click the link above to learn land claims
-      in 3 minutes or less.  :)
+    Text: Cuide das suas coisas protegendo seu terreno! Clique no link abaixo para aprender a proteger terrenos
+      em menos de 3 minutos. :)
   BookDisabledChestClaims:
-    Text: '  On this server, placing a chest will NOT claim land for you.'
+    Text: ' ATENÇÃO: Neste servidor, colocar um baú não irá proteger um terreno pra você!'
   BookUsefulCommands:
-    Text: 'Useful Commands:'
+    Text: 'Comandos úteis:'
   BookLink:
     Text: 'Click: {0}'
     Notes: '{0}: video URL'
   BookTools:
-    Text: Our claim tools are {0} and {1}.
+    Text: As ferramentas de terreno são {0} e {1}.
     Notes: '0: claim modification tool name; 1:claim information tool name'
   ResizeClaimTooNarrow:
-    Text: This new size would be too small.  Claims must be at least {0} blocks wide.
+    Text: Este novo tamanho é muito pequeno. Terrenos precisam ser pelo menos {0} blocos de largura.
     Notes: '0: minimum claim width'
   ResizeClaimInsufficientArea:
-    Text: This claim would be too small.  Any claim must use at least {0} total claim
-      blocks.
+    Text: Este tamanho é pequeno.  Qualquer terreno precisa ter no mínimo {0} blocos protegidos.
     Notes: '0: minimum claim area'
   NoProfanity:
-    Text: Please moderate your language.
+    Text: Tome cuidado com suas palavras. Pode ser kickado pela Staff.
   PlayerNotIgnorable:
-    Text: You can't ignore that player.
+    Text: Você não pode ignorar este jogador.
   NoEnoughBlocksForChestClaim:
-    Text: Because you don't have any claim blocks available, no automatic land claim
-      was created for you.  You can use /ClaimsList to monitor your available claim
+    Text: Porque você não tem blocos de proteção, terreno não será protegido automaticamente para você. Você pode usar /ClaimsList para monitorar seus terrenos
       block total.
   IsIgnoringYou:
-    Text: That player is ignoring you.
+    Text: Este jogador esta ignorando você.
   MustHoldModificationToolForThat:
-    Text: You must be holding a golden shovel to do that.
+    Text: Você precisa estar segurando uma pá de ouro para fazer isso.
   StandInClaimToResize:
-    Text: Stand inside the land claim you want to resize.
+    Text: Fique ao lado do terreno que você deseja aumentar.
   ClaimsExtendToSky:
-    Text: Land claims always extend to max build height.
+    Text: Terrenos sempre extendem até a maior altura possível para construção.
   ClaimsAutoExtendDownward:
-    Text: Land claims auto-extend deeper into the ground when you place blocks under
-      them.
+    Text: Terrenos extendem automaticamente para baixo do chão quando colocado blocos em baixo dele.
   MinimumRadius:
-    Text: Minimum radius is {0}.
+    Text: Raio mínimo de {0}.
     Notes: '0: minimum radius'
   RadiusRequiresGoldenShovel:
-    Text: You must be holding a golden shovel when specifying a radius.
+    Text: Você precisa segurar uma pá de ouro para especificar o raio.
   ClaimTooSmallForActiveBlocks:
-    Text: This claim isn't big enough to support any active block types (hoppers,
-      spawners, beacons...).  Make the claim bigger first.
+    Text: Este terreno não é grande o suficiente para suportar blocos ativos(hoppers,
+      spawners, sinalizadores...). Faça seu terreno maior antes.
   TooManyActiveBlocksInClaim:
-    Text: This claim is at its limit for active block types (hoppers, spawners, beacons...).  Either
-      make it bigger, or remove other active blocks first.
+    Text: Este terreno está no limite de blocos ativos (hoppers, spawners, sinalizadores...). Aumente seu terreno ou retire alguns da sua proteção
   ConsoleOnlyCommand:
-    Text: That command may only be executed from the server console.
+    Text: Este comando só pode ser utilizado pelo console.
   WorldNotFound:
-    Text: World not found.
+    Text: Mundo não encontrado.
   AdjustBlocksAllSuccess:
-    Text: Adjusted all online players' bonus claim blocks by {0}.
+    Text: Blocos de proteção ajustados para todos jogadores Online. Nova quantidade: {0}.
     Notes: '0: adjustment amount'
   TooMuchIpOverlap:
-    Text: Sorry, there are too many players logged in with your IP address.
+    Text: Desculpe, tem muitos jogadores com o mesmo IP que o seu. Contate um membro da Staff.
   StandInSubclaim:
-    Text: You need to be standing in a subclaim to restrict it
+    Text: Você precisa estar dentro de um subclaim para restringi-lo.
   SubclaimRestricted:
-    Text: This subclaim's permissions will no longer inherit from the parent claim
+    Text: As permissões deste subclaim não serão herdadas do terreno principal.
   SubclaimUnrestricted:
-    Text: This subclaim's permissions will now inherit from the parent claim
+    Text: As permissões deste subclaim serão herdadas do terreno principal.
   NetherPortalTrapDetectionMessage:
     Text: Parece que você está preso dentro de um portal para o Nether. Vamos te resgastar
       em alguns segundos caso esse seja o caso!
